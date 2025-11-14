@@ -1,0 +1,157 @@
+.welcome-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 500px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.welcome-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: bounce 1s ease infinite;
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.welcome-features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-icon {
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.welcome-description {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.welcome-description p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.welcome-action {
+  margin-bottom: 20px;
+}
+
+.start-button {
+  height: 50px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6b6b 0%, #ee5a6f 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(238, 90, 111, 0.4);
+  transition: all 0.3s ease;
+}
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
+.welcome-footer {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 375px) {
+  .welcome-title {
+    font-size: 24px;
+  }
+
+  .welcome-icon {
+    font-size: 56px;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+
+  .feature-text {
+    font-size: 12px;
+  }
+}

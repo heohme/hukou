@@ -1,0 +1,155 @@
+.form-steps-container {
+  height: 100vh;
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.steps-header {
+  background: #ffffff;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.steps-progress {
+  margin-bottom: 12px;
+}
+
+.steps-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.step-current {
+  font-size: 24px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.step-divider {
+  color: #cccccc;
+  font-size: 20px;
+}
+
+.step-total {
+  font-size: 18px;
+  color: #999999;
+}
+
+.step-title {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.steps-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.steps-actions {
+  flex-shrink: 0;
+  background: #ffffff;
+  padding: 12px 20px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 12px;
+  z-index: 100;
+}
+
+.btn-prev {
+  flex: 0 0 100px;
+}
+
+.btn-next {
+  flex: 1;
+  height: 44px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 表单步骤通用样式 */
+.step-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.form-item {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.form-label-required::before {
+  content: '*';
+  color: #ff3141;
+  margin-right: 4px;
+}
+
+.form-hint {
+  font-size: 13px;
+  color: #999999;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.form-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.form-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+@media (max-width: 375px) {
+  .step-current {
+    font-size: 20px;
+  }
+
+  .step-title {
+    font-size: 16px;
+  }
+
+  .steps-content {
+    padding: 16px;
+  }
+}

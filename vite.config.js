@@ -10,5 +10,22 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    // 优化构建
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true, // 生产环境移除 console
+      },
+    },
+    rollupOptions: {
+      output: {
+        // 代码分割
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'antd-mobile': ['antd-mobile'],
+          'charts': ['echarts'],
+        },
+      },
+    },
   },
 })

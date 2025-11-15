@@ -6,8 +6,8 @@ import './SharePanel.css';
 const SharePanel = ({ score, qualifyYear }) => {
   const [showQR, setShowQR] = useState(false);
 
-  // 这里使用占位URL，实际部署时替换
-  const shareUrl = 'https://your-domain.com';
+  // Cloudflare Pages 部署地址
+  const shareUrl = 'https://hukou.pages.dev/';
 
   const handleCopyLink = () => {
     if (navigator.clipboard) {
